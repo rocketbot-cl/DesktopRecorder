@@ -274,10 +274,10 @@
                     var cap = tmp.capture;
                     delete tmp.capture;
 
-                    var parent_ = '<table class="table table-sm table-striped"><thead><tr><th>Act.</th><th>Ctrl Id</th><th>Clase</th><th>Title</th></tr></thead><tbody>';
+                    var parent_ = '<table class="table table-sm table-striped"><thead><tr><th>Act.</th><th>Ctrl Id</th><th>Clase</th><th>Title</th><th>Index</th></tr></thead><tbody>';
                     for (var ttt = 0; ttt < data[t].parent.length; ttt++) {
                         //console.log("sss", data[t].parent[ttt])
-                        parent_ = parent_ + "<tr><td><input " + (data[t].parent[ttt].act ? "checked" : "") + " type='checkbox' onchange='setStatusCheck(\"" + data[t].parent[ttt].id  +"\", this,)' id='" + data[t].parent[ttt].id + "'></td><td> " + data[t].parent[ttt].ctrlid + "</td><td>" + data[t].parent[ttt].cls + "</td><td>" + data[t].parent[ttt].title + "</td></tr>";
+                        parent_ = parent_ + "<tr><td><input " + (data[t].parent[ttt].act ? "checked" : "") + " type='checkbox' onchange='setStatusCheck(\"" + data[t].parent[ttt].id  +"\", this,)' id='" + data[t].parent[ttt].id + "'></td><td> " + data[t].parent[ttt].ctrlid + "</td><td>" + data[t].parent[ttt].cls + "</td><td>" + data[t].parent[ttt].title + "</td><th>"+ data[t].parent[ttt].idx +"</th></tr>";
                     }
                     parent_ = parent_ + "</tbody></table>";
                     est = est.replace("{{parent}}", parent_)

@@ -1,3 +1,3 @@
 ## DesktopRecorder
 
- view the documentation at: https://github.com/rocketbot-cl/SAPB1/blob/master/example/Manual_DesktopRecorder.pdf
+ view the documentation at: https://github.com/rocketbot-cl/DesktopRecorder/blob/master/example/Manual_DesktopRecorder.pdf
